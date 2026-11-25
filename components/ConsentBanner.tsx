@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 
 declare global {
   interface Window {
-    gtag?: (...args: unknown[]) => void;
+    gtag: (...args: unknown[]) => void;
   }
 }
 
@@ -14,7 +14,7 @@ export default function ConsentBanner() {
   }, []);
   function choose(granted: boolean) {
     localStorage.setItem("rathore-ads-consent", granted ? "granted" : "denied");
-    window.gtag?.("consent", "update", {
+    window.gtag("consent", "update", {
       ad_storage: granted ? "granted" : "denied",
       ad_user_data: granted ? "granted" : "denied",
       ad_personalization: granted ? "granted" : "denied",
