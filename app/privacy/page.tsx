@@ -39,8 +39,16 @@ export default function Privacy() {
         </p>
         <h2>Contact</h2>
         <p>
-          Before publishing, replace this section with a real contact email
-          address and the identity/location of the website operator.
+          For any questions, access, correction or deletion requests regarding
+          your personal information, you can contact the website owner:
+        </p>
+        <p>
+          <strong>Name:</strong> Rohit Rathore
+          <br />
+          <strong>Email:</strong>{" "}
+          <a href="mailto:rohitrathorebanda123@gmail.com">
+            rohitrathorebanda123@gmail.com
+          </a>
         </p>
       </div>
       <p>
