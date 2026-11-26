@@ -47,6 +47,7 @@ export default function SubscribeForm() {
         setConsent(false);
       }
     } catch (error) {
+      console.log("🚀 ~ submit ~ error:", error)
       setMessage(error instanceof Error ? error.message : "Please try again.");
     } finally {
       setBusy(false);
